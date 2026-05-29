@@ -1,19 +1,8 @@
+[workspace]
+members = ["app", "client"]
+resolver = "2"
+
 [package]
-name = "safe-deal"
+name = "safedeal"
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]
-gstd = "1.10"
-gmeta = "1.7"
-gtest = "1.7"
-codec = { package = "parity-scale-codec", version = "3", features = ["derive"] }
-scale-info = { version = "2", features = ["derive"] }
-
-[lib]
-crate-type = ["cdylib"]
-
-[profile.release]
-opt-level = "s"
-lto = true
-strip = true
