@@ -6,6 +6,9 @@ edition = "2021"
 [dependencies]
 sails-rs = "1.0"
 
+[dev-dependencies]
+sails-rs = { version = "1.0", features = ["gtest"] }
+
 [lib]
 crate-type = ["cdylib"]
 
